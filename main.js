@@ -39,7 +39,18 @@ button.forEach(btn => {
             break;
             case "+":
             caseBtnCount = true
-            caseButton = "+"
+            git remote komutu, Git deposundaki uzak depoları görüntülemek veya yapılandırmak için kullanılır. nima ise bir isimdir ve yeni bir uzak depo eklemek için kullanılır.
+
+            git remote nima komutunu kullanarak nima adında bir uzak depo eklemek istediğinizi anlıyorum. Ancak, git remote komutu sadece mevcut uzak depoları listeler ve yeni bir uzak depo eklemek için kullanılmaz.
+            
+            Yeni bir uzak depo eklemek için aşağıdaki komutu kullanabilirsiniz:
+            
+            csharp
+            Copy code
+            git remote add nima <uzak_depo_URL>
+            Burada <uzak_depo_URL>, nima adında yeni uzak depo için geçerli olan URL'yi temsil eder. Bu URL, uzak depoya nasıl erişileceğini belirtir. Örneğin, GitHub'da bir uzak depo için URL, https://github.com/kullanici_adi/depo_adi.git şeklinde olabilir.
+            
+            Lütfen, nima adındaki uzak depo için uygun bir URL kullanarak komutu çalıştırabilirsiniz   caseButton = "+"
             h2.textContent = caseButton
             caseBtnCount = true
             break;
@@ -75,3 +86,6 @@ button.forEach(btn => {
             }
     })
 })
+
+
+console.log("finesh")
